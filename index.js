@@ -9,16 +9,20 @@ let count = 0;
 
 // counter decrement function
 dcBtnEl.addEventListener("click", function() {
-    count--
-    inputEl.innerText = `${ count }`;
-    statusColor()
+    if (count > 0) {
+        count--
+        inputEl.innerText = `${ count }`;
+        statusColor()
+    }
 })
 
 // counter increment function
 incBtnEl.addEventListener("click", function() {
+    if (count < 10) {
     count++
     inputEl.innerText = `${ count }`;
     statusColor()
+    }
 })
 
 // reseting counter to the inital value (0)
