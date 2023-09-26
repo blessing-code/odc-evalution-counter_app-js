@@ -33,7 +33,7 @@ button {
     color: red;
 }
 
-p {
+.count-el {
     padding: 8px;
     width: 250px;
     margin-left: 5px;
@@ -66,6 +66,13 @@ p {
     background: rgba(233, 233, 105, 0.889);
     box-shadow: 1px 1px 8px black;
     cursor: pointer;
+}
+
+.count-status {
+    border: 1px solid red;
+    border-radius: 4px;
+    box-shadow: 2px 2px 0 black;
+    padding: 5px;
 }
 
 h5 {
